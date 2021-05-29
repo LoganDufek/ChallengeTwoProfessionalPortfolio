@@ -1,0 +1,81 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {  color: #ffffff;
+    text-decoration: none;}
+
+header { background-color: #31343d;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+header nav {
+    vertical-align: middle;
+    margin: 7px 0;}
+
+nav {
+     display: flex;
+     height: 40px;
+     padding-top: 30px; 
+     padding-right: 70px;
+     font-size: 20px;
+     align-items: center;
+    }
+
+.title {background-color: #92cccd;
+color: #31343d;
+font-size: 45px;
+padding: 10px 10px 10px 100px;
+margin-bottom: 15px;
+margin-top: 5px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+
+header nav ul { 
+display: flex;
+flex-wrap:none;
+list-style-type: none;
+align-items: center;
+font-size: 25px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    border-bottom: 4px solid #92cccd;
+    padding: 0 10px;
+}
+
+nav ul li a {
+    color: #92cccd;
+}
+
+section {padding: 120px;}
+
+.hero {
+    position: relative;
+    background-image: url(../images/PortfolioHero.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-position: 80%;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.herosubtitle { 
+    margin-top: auto;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #31343d;
+    padding: 10px;
+    background-color: #92cccd;
+    position: absolute;
+    bottom: 20px;
+    
+}
