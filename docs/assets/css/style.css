@@ -222,7 +222,7 @@ font-family: Arial, Helvetica, sans-serif;
     transition: 0.3s;
 }
 
-.runbuddytitle {
+.subrunbuddy {
 position: absolute;
 z-index: 9999;
 left: 20px;
@@ -234,7 +234,7 @@ color: #31343d;
 font-size: 30px;
 }
 
-.runbuddytitle p {
+.subrunbuddy p {
     font-size: 15px;
     font-weight: 500;
     padding-top: 5px;
@@ -253,7 +253,7 @@ font-size: 30px;
 }  
 
 
-.project2 {position: relative;
+.project2, .project4 {position: relative;
     margin-top: 10px;
     display: inline-flex;
     height: 200px;
@@ -262,7 +262,7 @@ font-size: 30px;
 
 }
 
-.project2 img {
+.project2 img, .project4 img {
     display: inline-flex;
     border: 9px solid #92cccd;
     height: 200px;
@@ -271,19 +271,19 @@ font-size: 30px;
     transition: opacity 0.3s, transform 0.3s;
 }
 
-.project2 a {
+.project2 a, .project4 a  {
     background-color: #92cccd;
     margin-left: 20px;
     height: 200px;
     width: 440px;
 }
 
-.project2 img:hover {
+.project2 img:hover, .project4 img:hover  {
     opacity: 100%;
     transition: 0.3s;
 }
 
-.subproject2 {
+.subproject2, .subproject4 {
     position: absolute;
     z-index: 9999;
     top: 75px;
@@ -296,7 +296,7 @@ font-size: 30px;
     
     }
 
-.subproject2 p {
+.subproject2 p, .subproject4 p {
     font-size: 15px;
     font-weight: 500;
     padding-top: 5px;
@@ -428,7 +428,7 @@ position: relative;
         padding-left: 0px;
     }
 
-    .project2, .project2 img, .project2 a  {
+    .project2, .project2 img, .project2 a, .project4, .project4 img, .project4 a  {
         height: 200px;
         width: 800px;
         width: 100%;
@@ -443,16 +443,18 @@ position: relative;
         position: relative;
     }
 
-    .subproject3 {
+    .subproject3  {
         top: auto;
         bottom: 25px;
         left: 20px;
     }
-    .subproject2 { 
+    .subproject2, .subproject4{ 
         left: 20px;
         top: auto;
         bottom: 25px;
     }
+    .subproject4 h5{
+        font-size: 25px;
     }
 
 
@@ -512,7 +514,7 @@ position: relative;
     .run-buddy {
         flex: 0 70%;
     }
-    .runbuddytitle {
+    .subrunbuddy {
         flex: 1 100%;
     }
 
@@ -541,7 +543,7 @@ position: relative;
     }
 
 
-    .run-buddy a , .project2 a , .project3 a {
+    .run-buddy a , .project2 a , .project3 a, .project4 a {
         margin-left: 0;
     }
  
@@ -583,7 +585,7 @@ position: relative;
     margin-bottom: 15px;
 }
 
-.runbuddytitle, .subproject3, .subproject2 {
+.subrunbuddy, .subproject3, .subproject2, .subproject4 {
    margin-right: 20px;
    margin-left: -12px;
 }
@@ -634,14 +636,21 @@ position: relative;
  
     .herosubtitle h2 {
         font-size: 30px;
+        text-align: center;
     }
 
     header nav ul li {
         padding: 0 5px;
+        
     }
 
+    header nav ul {
+        text-align: center;
+        margin-bottom: 10px;
+    }
     header nav ul li a {
         font-size: 14px;
+
     }
 
     .links ul li {
@@ -650,18 +659,18 @@ position: relative;
     
 
 
-    .runbuddytitle {
+    .subrunbuddy {
         
         font-size: 25px;
         padding-top: 0px;
         padding-bottom: 5px;
         
     }
-    .runbuddytitle p {
+    .subrunbuddy p {
         font-size: 15px;
     }
 
-    .subproject3 h5, .subproject2 h5 {
+    .subproject3 h5, .subproject2 h5, .subproject4 h5 {
     margin-top: -10px;
     padding-top: 0px;
     margin-left: -10px;
@@ -669,8 +678,10 @@ position: relative;
     font-size: 15px;
 }
 
-.subproject3 p, .subproject2 p {
+.subproject3 p, .subproject2 p, .subproject4 p {
     font-size: 12px;
     margin-left: -10px;
   }
+  }
+
 }
