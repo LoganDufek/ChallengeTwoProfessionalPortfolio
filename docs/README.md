@@ -5,7 +5,7 @@ For this second weekly challenge, the task was to create a professional looking 
 
 ### Website Screenshot
 
-![Portfolio Screenshot](/docs/assets/images/Professional-Portfolio-Screenshot.png )
+![Portfolio Screenshot](./assets/images/ProfessionalPortfolioScreenshot.jpg)
 
 #### Link to Live Site: 
 https://logandufek.github.io/ChallengeTwoProfessionalPortfolio/
