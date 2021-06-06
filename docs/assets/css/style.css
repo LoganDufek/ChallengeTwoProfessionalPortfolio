@@ -1,8 +1,12 @@
+/*  Styling Defaults */
+
 * {margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 }
+
+/* Styling for Main Body Begins Here */
 
 html,body
 {
@@ -15,6 +19,11 @@ html,body
 
 a {  color: #000000;
     text-decoration: none;}
+
+/* Styling for Main Body Ends Here */
+
+
+/* Styling for Header and Nav Begins Here */
 
 header { background-color: #31343d;
 display: flex;
@@ -67,8 +76,11 @@ nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Styling for Header and Nav Ends Here */
+
 section {padding: 20px 35px;}
 
+/* Styling for Hero Starts Here */
 .hero {
     position: relative;
     background-image: url(../images/PortfolioHero.jpg);
@@ -83,64 +95,49 @@ section {padding: 20px 35px;}
 
 .herosubtitle { 
     margin-top: auto;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #31343d;
     padding: 10px;
     background-color: #92cccd;
     position: absolute;
     bottom: 20px;
-    
+}
+
+.herosubtitle h2 {
+      font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #31343d;
 }
 
 .photo {border: 4px solid #92cccd;
-background-image: url(../images/RecentPhoto.jpg);
-background-size:cover;
-background-position:center;
-width: 250px;
-height: 250px;
-margin-bottom: 80px;
+    background-image: url(../images/RecentPhoto.jpg);
+    background-size:cover;
+    background-position:center;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 80px;
 
 }
+/* Styling for Hero Starts Here */
 
+/* Bio Styling */
 .bio {
     width: 100%;
     margin: 0 auto;
 }
 
-/* 
-.test {display: flex;
-    position: relative;
-    padding: 70px 60px 20px 60px ;
-    align-items: left;
-    align-content: flex-start;
-    }
 
-.test h3 { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    padding: 0 15px 0 35px;
-    border-right: 4px solid #31343d;
-    text-align: right;
-    display: flex;
-        } */
 
-/* .contactme .column-two {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    padding: 20px 0px 20px 16px;
-
-} */
-
+/* About Me and Work Collumb Styling */
 .column-one { display: inline-flex;
-vertical-align: top;
-position: relative;
+    vertical-align: top;
+    position: relative;
 
 }
 
+
+/* About Me Styling Begins Here */
 .aboutme {display: flex;
 position: relative;
-padding: 70px 60px 20px 60px ;
+padding: 20px 60px 20px 60px ;
 
 }
 .aboutme h3 {
@@ -173,23 +170,26 @@ font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
     
 }
+/* About Me Styling Ends Here */
+
+
+/* Work Styling Begins Here */
 
 .work {display: flex;
     position: relative;
     padding: 20px 0px 20px 15px;
     margin-left: 60px;
-    
 }
 .work h3 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 50px;
-        padding: 0 15px 0 35px;
-        border-right: 4px solid #31343d;
-        text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    padding: 0 15px 0 35px;
+    border-right: 4px solid #31343d;
+    text-align: right;
        
 }
 
-
+/* Run Buddy Project Styling */
 .run-buddy {position: relative;
     display: inline-flex;
     height: 500px;
@@ -241,7 +241,7 @@ font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+/* Subproject Group Styling */
 .subprojects {
     position: relative;
     display: flex;
@@ -353,7 +353,11 @@ font-size: 30px;
         padding-top: 5px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+/* Work Styling Ends Here */
 
+
+
+/* Contact Me Styling Begins Here */
 
 .contactme{
     display: flex;
@@ -386,9 +390,18 @@ position: relative;
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: 95px;
-    margin-right: 95px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
    }
+
+
+.links ul { 
+    list-style-type: none;
+    font-size: 25px;
+    display: block;
+    
+        }
 
 .links ul li {
     
@@ -399,18 +412,13 @@ position: relative;
     
 }
 
-.links ul { 
-    list-style-type: none;
-    font-size: 25px;
-    display: block;
-    justify-content: center;
-        }
+
 
 .links ul li a {
     color: #92cccd;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Contact Me Styling Ends Here */
 
 
 
@@ -453,21 +461,26 @@ position: relative;
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 980px) {
-
+    .aboutme {
+        flex: 100%;
+    }
   
+
     header { padding-bottom: 0;
-       
         display: flex;
-        flex: 0, 70%;
+        justify-content: space-between;
         }
         
+    nav {
+        padding-right: 0px;
+
+        }
         .title h1 { width: 100%;
          text-align: center;
          padding: 10px 10px 10px 10px;
         }
         
         header nav ul {
-        width: 100%;
         justify-content: center;
         display: inline;
         padding-left: 10px;
@@ -477,31 +490,84 @@ position: relative;
           font-size: 20px;
         }
         
-        
-
 
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
 @media screen and (max-width: 768px) {
+
+    .bio h3 {
+        font-size: 70px;
+    }
+
+    header {
+        
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-shrink: 0 100%;
+        
+    }
+    .run-buddy {
+        flex: 0 70%;
+    }
+    .runbuddytitle {
+        flex: 1 100%;
+    }
+
+    .title h1 {
+        font-size: 65px;
+    }
+
+    header nav {
+        margin-top: -14px;
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+        flex-shrink: 0 100%;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        flex: auto;
+    }
+    
+     .herosubtitle {
+       display: flex;
+        flex: 0 100%;
+        margin: 0 20px;
+    }
+
+
+    .run-buddy a , .project2 a , .project3 a {
+        margin-left: 0;
+    }
+ 
+    .aboutme {
+        padding: 0px
+    }
+
     .work {
         display: inline-flex;
         flex-wrap: wrap;
         margin-bottom: 15px;
         justify-content: center;
-        padding: 10px 60px 20px 60px;
+        padding: 10px 0px 20px 0px;
         margin-left: 0px;
     }
 
     .work h3 {
         padding: 0px;
+        text-align: center;
     }
     
     .aboutme h3 {
         display: flex;
         justify-content: center;
         padding: 0px;
+        text-align: center;
     }
 
 
@@ -512,14 +578,99 @@ position: relative;
     }
 
 .column-one h3 {
-    border-bottom: 2px solid #000000;
+    border-bottom: 4px solid #000000;
     border-right: none;
     margin-bottom: 15px;
 }
 
-  }
+.runbuddytitle, .subproject3, .subproject2 {
+   margin-right: 20px;
+   margin-left: -12px;
+}
 
+.column-three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0px;
+}
+.contactme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.contactme h3 {
+    
+    border-bottom: 4px solid #31343d;
+    text-align: center;
+    border-right: none;
+    padding-right: 0px;
+}
+
+.links {
+    display: inline-flex;
+    
+    justify-content: center;
+  
+}
+.links ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.links ul li {
+    display: inline-flex;
+    font-size: 33px;
+    margin-right: 20px;
+    margin-right: 20px;
+}
+}
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 
   @media screen and (max-width: 575px) { 
+ 
+    .herosubtitle h2 {
+        font-size: 30px;
+    }
+
+    header nav ul li {
+        padding: 0 5px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    .links ul li {
+        font-size: 28px
+    }
     
+
+
+    .runbuddytitle {
+        
+        font-size: 25px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        
+    }
+    .runbuddytitle p {
+        font-size: 15px;
+    }
+
+    .subproject3 h5, .subproject2 h5 {
+    margin-top: -10px;
+    padding-top: 0px;
+    margin-left: -10px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.subproject3 p, .subproject2 p {
+    font-size: 12px;
+    margin-left: -10px;
   }
+}
